@@ -1,0 +1,238 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <title>Creative and Beautiful Website</title>
+
+    <!-- Custom CSS -->
+    <style>
+      /* Background gradient with animation */
+      body {
+        background: linear-gradient(135deg, #f0e6f6, #d9e2f0, #a4c6f4);
+        background-size: 400% 400%;
+        animation: gradientAnimation 15s ease infinite;
+        font-family: 'Arial', sans-serif;
+        color: #333;
+        margin: 0;
+        padding: 0;
+      }
+
+      @keyframes gradientAnimation {
+        0% { background-position: 0% 50%; }
+        50% { background-position: 100% 50%; }
+        100% { background-position: 0% 50%; }
+      }
+
+      /* Header styling with animation */
+      h1 {
+        text-align: center;
+        margin-top: 50px;
+        color: #fff;
+        font-size: 4rem;
+        font-weight: bold;
+        text-transform: uppercase;
+        text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.6);
+        animation: fadeInFromTop 2s ease-out;
+      }
+
+      @keyframes fadeInFromTop {
+        0% {
+          opacity: 0;
+          transform: translateY(-50px);
+        }
+        100% {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      /* Container with card effect */
+      .table-container {
+        background: rgba(255, 255, 255, 0.9);
+        padding: 30px;
+        border-radius: 20px;
+        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+        animation: fadeInUp 2s ease-in-out;
+        margin-bottom: 50px;
+      }
+
+      @keyframes fadeInUp {
+        0% {
+          opacity: 0;
+          transform: translateY(20px);
+        }
+        100% {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      /* Table styling */
+      .table-dark {
+        background: rgba(0, 0, 0, 0.8);
+        color: #f8f9fa;
+        border-radius: 10px;
+        overflow: hidden;
+      }
+
+      .table-dark th, .table-dark td {
+        padding: 15px 20px;
+        text-align: center;
+      }
+
+      .table-dark tr:hover {
+        background-color: rgba(255, 165, 0, 0.7);
+        color: #000;
+        transition: background-color 0.3s ease;
+      }
+
+      /* Image section */
+      .container img {
+        border-radius: 20px;
+        box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+        transition: transform 0.5s ease, box-shadow 0.5s ease;
+      }
+
+      .container img:hover {
+        transform: scale(1.1) rotate(3deg);
+        box-shadow: 0 25px 50px rgba(0, 0, 0, 0.6);
+      }
+
+      /* Paragraph styling */
+      p {
+        font-size: 1.25rem;
+        color: #444;
+        margin-bottom: 20px;
+        animation: fadeInText 2s ease-in-out;
+      }
+
+      @keyframes fadeInText {
+        0% {
+          opacity: 0;
+          transform: translateY(20px);
+        }
+        100% {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      /* Link styling */
+      a {
+        text-decoration: none;
+        color: #ff6b6b;
+        font-weight: bold;
+        transition: color 0.3s ease;
+      }
+
+      a:hover {
+        color: #f06595;
+      }
+
+      /* Responsive adjustments */
+      @media (max-width: 768px) {
+        h1 {
+          font-size: 2.5rem;
+        }
+
+        .table-dark th, .table-dark td {
+          font-size: 0.9rem;
+          padding: 10px;
+        }
+      }
+
+      @media (max-width: 576px) {
+        .container img {
+          width: 100%;
+          height: auto;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Animated Heading -->
+    <h1>Welcome to My Website</h1>
+    <p class="text-center">My Name Is Soban</p>
+
+    <!-- Responsive Table -->
+    <div class="container mt-5">
+      <div class="table-container p-3">
+        <table class="table table-dark table-striped">
+          <thead>
+            <tr>
+              <th>First Name</th>
+              <th>Last Name</th>
+              <th>Email</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Soban</td>
+              <td>M.Humair</td>
+              <td>soban@gmail.com</td>
+            </tr>
+            <tr>
+              <td>Kashan</td>
+              <td>M.Bashir</td>
+              <td>kashan@gmail.com</td>
+            </tr>
+            <tr>
+              <td>Saad</td>
+              <td>M.Faisal</td>
+              <td>saad@gmail.com</td>
+            </tr>
+            <tr>
+              <td>AbdulHadi</td>
+              <td>Fahad</td>
+              <td>abdulhadifahad@gmail.com</td>
+            </tr>
+            <tr>
+              <td>Syed Umer</td>
+              <td>Ali</td>
+              <td>umer@gmail.com</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- Image Section -->
+    <div class="container mt-5 text-center">
+      <h2>This Is A Picture</h2>
+      <p>Click below to watch something amazing!</p>
+      <a href="https://honda.com.pk/civic-rs-turbo" target="_blank">
+        <img class="img-fluid" src="P4.avif" alt="This Image Is Not Available" style="max-width: 100%; height: auto;">
+      </a><br><br><br>
+      <div>
+        <h1>HONDA CIVIC</h1>
+        <p>The **Honda Civic** is a compact car that has been a favorite among drivers for decades due to its balance of performance, efficiency, and reliability. First introduced in 1972, the Civic has evolved over the years, offering cutting-edge technology, advanced safety features, and a stylish design. The latest models are known for their sleek aerodynamics, high-quality interior, and fuel-efficient engines, making them ideal for both city driving and longer road trips. Whether in sedan, hatchback, or coupe form, the Honda Civic consistently delivers a fun driving experience with strong resale value and excellent customer satisfaction.</p>
+    </div><br><br>
+      <a href="https://www.youtube.com/watch?v=5FkWBwMc-8k"><img class="img-fluid" src="P5.webp" alt="This Image Is Not Available" style="max-width: 100%; height: auto;"></a>
+    </div>
+    <div>
+        <h1>HONDA CIVIC FEATURES</h1>
+        <p>The **Honda Civic** offers a range of standout features, including a touchscreen infotainment system with Apple CarPlay and Android Auto, along with advanced safety features like adaptive cruise control and lane-keeping assist through Honda Sensing®. It also provides a spacious, comfortable interior with premium materials, and its turbocharged engine options deliver both power and efficiency. Sleek exterior touches like LED headlights and alloy wheels enhance its modern design..</p>
+    </div>
+    
+    <!-- Optional JavaScript; Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <div class="container mt-3">
+        <h2>Card Images</h2>
+        <div class="card" style="width: 400px;">
+        <img src="P5.webp" alt="The Card Image IS Not Available" width="100%">
+        <div class="card-body">
+            <h3 class="card-title">Cards</h3>
+            <p class="cad-text">This Is Honda Civic</p>
+            <a href="https://honda.com.pk/civic-rs-turbo" class="btn btn-primary">Read More</a>
+        </div>
+        </div>
+    </div>
+
+  </body>
+</html>
